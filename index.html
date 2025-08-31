@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Bessemer • Abandoned Cart (Sample)</title>
   <style>
-    /* simple, safe styles */
     body{margin:0;background:#f4f6f8}
     .stage{max-width:600px;margin:0 auto;background:#ffffff}
     img{display:block;border:0;width:100%;height:auto}
     a{text-decoration:none}
+    table{border-collapse:collapse}
+
     .px{padding-left:20px;padding-right:20px}
     .py{padding-top:20px;padding-bottom:20px}
     .h1{font:bold 20px/1.35 Arial,Helvetica,sans-serif;color:#000}
@@ -17,7 +18,8 @@
     .small{font:12px/1.6 Arial,Helvetica,sans-serif;color:#000}
     .btn{display:inline-block;background:#000;color:#fff;padding:12px 22px;font:bold 14px/1 Arial,Helvetica,sans-serif;border-radius:2px}
     .pill{display:block;background:#000;color:#fff;text-align:center;padding:11px 0;font:bold 14px/1 Arial,Helvetica,sans-serif;border-radius:2px}
-    table{border-collapse:collapse}
+    .price{font:14px/1.4 Arial,Helvetica,sans-serif;color:#d0021b;font-weight:bold}
+    .strike{color:#777;text-decoration:line-through}
   </style>
 </head>
 <body>
@@ -61,48 +63,101 @@
     <table width="100%" role="presentation" bgcolor="#ffffff">
       <tr>
         <td class="px py body" align="center">
-          <div class="h1" style="margin-bottom:10px;">Hi Soha</div>
-          We noticed you left something special in your cart. Don't worry, you're one step away from starting your own Bessemer® collection.
+          <div class="h1" style="margin-bottom:10px;">We noticed you left something special in your cart.<br>You're one step away from starting your own Bessemer collection.</div>
         </td>
       </tr>
     </table>
 
-    <!-- PRODUCT SOURCE 1 (Abandoned Cart Recommender image) -->
+    <!-- PRODUCT ROW 1 -->
+    <table width="100%" role="presentation" bgcolor="#ffffff" style="padding:10px 0;">
+      <tr>
+        <td align="center" style="width:36%; padding-left:20px; padding-right:10px;">
+          <a href="#" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0564/2223/6320/products/Option3-32CMPANS_40CMROASTER_1024x1024.png?v=1660890400"
+                 alt="Bessemer 4 Piece Cookware Starter Set">
+          </a>
+        </td>
+        <td valign="middle" style="width:44%; padding:10px;">
+          <div class="h1" style="font-size:18px;">Bessemer 4 Piece<br>Cookware Starter Set</div>
+          <div class="small" style="padding-top:6px;">
+            <div class="strike">4,299.96</div>
+            <strong>1,299.96</strong>
+          </div>
+        </td>
+        <td align="center" valign="middle" style="width:20%; padding-right:20px;">
+          <a class="btn" href="#" target="_blank">SHOP NOW</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- PRODUCT ROW 2 -->
+    <table width="100%" role="presentation" bgcolor="#ffffff" style="padding:10px 0;">
+      <tr>
+        <td align="center" style="width:36%; padding-left:20px; padding-right:10px;">
+          <a href="#" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0564/2223/6320/products/1037710-BESS-MULTI-SPAN-24CM-EBONY_1024x1024.png?v=1630982858"
+                 alt="Bessemer Black Multi Saucepan 24cm">
+          </a>
+        </td>
+        <td valign="middle" style="width:44%; padding:10px;">
+          <div class="h1" style="font-size:18px;">Bessemer Black Multi<br>Saucepan 24cm</div>
+          <div class="small" style="padding-top:6px;">
+            <div class="strike">349.99</div>
+            <strong>319.99</strong>
+          </div>
+        </td>
+        <td align="center" valign="middle" style="width:20%; padding-right:20px;">
+          <a class="btn" href="#" target="_blank">SHOP NOW</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- RETURN TO CART CTA -->
     <table width="100%" role="presentation" bgcolor="#ffffff">
       <tr>
-        <td class="px" align="center" style="padding-bottom:20px;">
-          <a href="#" target="_blank">
-            <img
-              src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/2.jpg?eh={{contact.12565}}&es={{contact.12566}}"
-              alt="Recommended product">
+        <td class="px" align="center" style="padding:24px 20px 20px;">
+          <a class="btn" href="#" target="_blank" style="display:block; width:100%; text-align:center; padding:16px 0; font-size:16px;">
+            RETURN TO CART
           </a>
         </td>
       </tr>
     </table>
 
-    <!-- RECOMMENDED JUST FOR YOU (3-col) -->
+    <!-- RECOMMENDED JUST FOR YOU -->
     <table width="100%" role="presentation" bgcolor="#ffffff">
-      <tr><td class="px" align="center" style="padding-bottom:6px;">
-        <div class="h1" style="font-size:18px;">RECOMMENDED JUST FOR YOU</div>
+      <tr><td class="px" style="padding-bottom:8px;">
+        <table width="100%" role="presentation">
+          <tr>
+            <td><hr></td>
+            <td width="280" align="center"><div class="h1" style="font-size:16px;letter-spacing:.3px;">RECOMMENDED JUST &nbsp;FOR YOU</div></td>
+            <td><hr></td>
+          </tr>
+        </table>
       </td></tr>
       <tr>
-        <td class="px" style="padding-bottom:18px;">
+        <td class="px" style="padding-bottom:6px;">
           <table width="100%" role="presentation">
             <tr>
-              <td width="33.33%" align="center" style="padding-right:8px;">
+              <td width="33.33%" align="center" style="padding:0 8px;">
                 <a href="#" target="_blank">
-                  <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/1.jpg?eh={{contact.12565}}&es={{contact.12566}}" alt="Product 1">
+                  <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/1.jpg?eh={{contact.12565}}&es={{contact.12566}}" alt="Bessemer Black Dutch">
                 </a>
+                <div class="small" style="padding-top:10px;">Bessemer Black Dutch</div>
+                <div class="price" style="padding-top:6px;">$ 259.99</div>
               </td>
-              <td width="33.33%" align="center" style="padding-left:4px;padding-right:4px;">
+              <td width="33.33%" align="center" style="padding:0 8px;">
                 <a href="#" target="_blank">
-                  <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/2.jpg?eh={{contact.12565}}&es={{contact.12566}}" alt="Product 2">
+                  <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/2.jpg?eh={{contact.12565}}&es={{contact.12566}}" alt="Bessemer Black">
                 </a>
+                <div class="small" style="padding-top:10px;">Bessemer Black</div>
+                <div class="price" style="padding-top:6px;">$ 159.99</div>
               </td>
-              <td width="33.33%" align="center" style="padding-left:8px;">
+              <td width="33.33%" align="center" style="padding:0 8px;">
                 <a href="#" target="_blank">
-                  <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/3.jpg?eh={{contact.12565}}&es={{contact.12566}}" alt="Product 3">
+                  <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/3.jpg?eh={{contact.12565}}&es={{contact.12566}}" alt="Bessemer Black Frypan">
                 </a>
+                <div class="small" style="padding-top:10px;">Bessemer Black Frypan</div>
+                <div class="price" style="padding-top:6px;">$ 199.99</div>
               </td>
             </tr>
           </table>
@@ -110,14 +165,14 @@
       </tr>
     </table>
 
-    <!-- SHOP BY CATEGORIES -->
+    <!-- SHOP BY CATEGORY -->
     <table width="100%" role="presentation" bgcolor="#ffffff">
       <tr>
-        <td class="px" style="padding-bottom:12px;">
+        <td class="px" style="padding-top:14px;padding-bottom:12px;">
           <table width="100%" role="presentation">
             <tr>
               <td><hr></td>
-              <td width="200" align="center"><div class="h1" style="font-size:18px;">Shop by Categories</div></td>
+              <td width="220" align="center"><div class="h1" style="font-size:16px;">Shop by Category</div></td>
               <td><hr></td>
             </tr>
           </table>
@@ -141,15 +196,6 @@
       </td></tr>
     </table>
 
-    <!-- CTA -->
-    <table width="100%" role="presentation" bgcolor="#ffffff">
-      <tr>
-        <td class="px" align="center" style="padding-bottom:26px;">
-          <a class="btn" href="#" target="_blank">SHOP NOW</a>
-        </td>
-      </tr>
-    </table>
-
     <!-- AFTER CTA IMAGE STRIPS -->
     <table width="100%" role="presentation" bgcolor="#ffffff">
       <tr><td><img src="https://link.bessemer.com.au/custloads/1024002066/md_295693.jpg" alt="The Bessemer Difference"></td></tr>
@@ -159,6 +205,15 @@
       <tr><td><img src="https://link.bessemer.com.au/custloads/1024002066/md_295695.jpg" alt="More than half a century of cooking with Bessemer"></td></tr>
       <tr><td style="height:16px"></td></tr>
       <tr><td><img src="https://link.bessemer.com.au/custloads/1024002066/md_295696.jpg" alt="PFOA Free • Designed in Australia • Lifetime Guarantee"></td></tr>
+    </table>
+
+    <!-- SHIPPING / RETURNS TEXT STRIP -->
+    <table width="100%" role="presentation" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="font:14px/1.4 Arial,Helvetica,sans-serif; color:#000; padding:12px 20px;">
+          <strong>FREE SHIPPING ON ORDERS OVER $130</strong> &nbsp; | &nbsp; <strong>30 DAYS RETURN</strong>
+        </td>
+      </tr>
     </table>
 
     <!-- FOOTER -->
@@ -172,12 +227,6 @@
           </td></tr>
           <tr><td align="center" style="padding:12px 0 6px;">
             <a href="#" target="_blank" class="small" style="text-decoration:underline;color:#000;">Click here to Contact Customer Service</a>
-          </td></tr>
-          <tr><td align="center" style="padding:18px 0;">
-            <table role="presentation"><tr>
-              <td style="padding:0 8px;"><img src="https://link.bessemer.com.au/custloads/1024002066/vce/facebook.png" alt="Facebook" width="38"></td>
-              <td style="padding:0 8px;"><img src="https://link.bessemer.com.au/custloads/1024002066/vce/instagram.png" alt="Instagram" width="38"></td>
-            </tr></table>
           </td></tr>
           <tr><td align="center" class="small" style="padding-top:10px;">
             Mailing Address: Bessemer | PO Box 7224 | Melbourne 3004 | Australia<br>
